@@ -170,7 +170,7 @@ public final class ChartServlet extends HttpServlet {
       } else {
         ecLevel = ErrorCorrectionLevel.valueOf(ldString.substring(0, pipeIndex));
         margin = Integer.parseInt(ldString.substring(pipeIndex + 1));
-        Preconditions.checkArgument(margin > 0, "Bad margin");
+        // Preconditions.checkArgument(margin > 0, "Bad margin");
       }
     }
 
